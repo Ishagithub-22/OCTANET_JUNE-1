@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Web</title>
+    <link rel="stylesheet" href="LandingPage-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="logo">TRAVEL WEB</div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">INFO</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>TROPICAL ISLAND</h1>
+                <h2>TRIP TO YOUR DREAM PLACE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore aliquam erat volutpat. Ut wisi enim veniam.</p>
+                <a href="#" class="btn">READ MORE</a>
+                <div class="social-icons">
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-x-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="image/images.jpeg" alt="Tropical Island">
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="image/beach.jpg" alt="Beach">
+            </div>
+            <div class="gallery-item">
+                <img src="image/palm.jpg" alt="Palm Trees">
+            </div>
+            <div class="gallery-item">
+                <img src="image/paradice.jpg" alt="Tropical Paradise">
+            </div>
+        </section>
+       
+        <section class="forms">
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div class="form-container">
+                <h2>Leave a Review</h2>
+                <form id="reviewForm">
+                    <label for="reviewName">Name:</label>
+                    <input type="text" id="reviewName" name="reviewName" required>
+                    <label for="reviewText">Review:</label>
+                    <textarea id="reviewText" name="reviewText" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">TRAVEL WEB</div>
+            <p>&copy; 2024 Travel Web. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="LandingPage-script.js"></script>
+</body>
+</html>

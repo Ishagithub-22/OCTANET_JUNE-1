@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('image/land.jpg');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 74, 124, 0.8);
+    animation: slideInDown 1s ease-out;
+}
+
+header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    perspective: 1000px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: rotateY(10deg);
+    color: #ffd700;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/land.jpg') no-repeat center center/cover;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+    max-width: 50%;
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.hero-content h1:hover {
+    transform: translateZ(10px);
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.hero-content h2:hover {
+    transform: translateZ(20px);
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.hero-content p:hover {
+    transform: translateZ(5px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004a7c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+social-icons i:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.gallery-item {
+    margin: 0 10px; /* Add margin between gallery items */
+}
+
+.gallery-item img {
+    width: 400px;
+    height: 450px; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+footer {
+    background-color:transparent;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+/* CSS for Forms */
+.forms {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.2, 0.1);
+}
+
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.form-container form input,
+.form-container form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-container form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-container form button:hover {
+    background-color: #0056b3;
+}
+
+.registration,
+.review {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration h2,
+.review h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.registration form,
+.review form {
+    margin-top: 10px;
+}
+
+.registration label,
+.review label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.registration input,
+.registration button,
+.review textarea,
+.review button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registration button,
+.review button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.registration button:hover,
+.review button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
